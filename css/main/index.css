@@ -1,0 +1,273 @@
+  *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;}
+/* after section*/
+.basic{
+position: relative;
+margin: 8px 0px;
+padding: 10px;}
+.basic::after{
+    content: "";
+    position: absolute;
+    top: 44%;
+    left: 39%;
+    background-color:#86a0b6;
+    height: 1px;
+    width: 6%;}
+.basic::before{
+  content: "";
+  position: absolute;
+  top: 44%;
+  left: 55%;
+  background-color:#86a0b6;
+  height: 1px;
+  width: 6%;}
+/*after section end*/
+/*nav*/ 
+.logo-taxt{
+margin:24px 44px ;
+color: #fff; 
+font-family:lobster;}
+.logo-taxt:hover{color: #86a0b6;}
+.img-bic{
+opacity:1;
+  background-image:url(./pexels-cleyder-duque-6400831.jpg);
+  height: 100vh;
+  position: relative;
+background-position: center center;
+background-size: cover;}
+.main{
+position: relative;
+width: 100%;}
+.titl {
+width: 40%;
+position: absolute;
+top: 65%;
+left:35%;}
+.main-inner{
+position: absolute;
+top:0;
+left: 0;
+width: 100%;
+z-index: 99;
+background-color: transparent;}
+.item  .link{
+  display: block;
+  font-weight: 500;
+  color: #ffffff;
+  transition: 0.15s;}
+.navbar-scroll{background-color: #ffffff;
+  padding: 0;
+  position: fixed;
+  top:0;
+  z-index: 44;
+  box-shadow:0px 1px 10px rgba(0,0,0,0.4);
+  transition-duration: 0.6s; }
+  .item  .link:hover{
+    color: #86a0b6;}
+.navbar-scroll .item  .link{color: black;}
+.navbar-scroll .logo {color: #000;}
+.nav_icon a {
+color: #fff;}
+.nav_icon a:hover{
+  color: #86a0b6;}
+section{background-color: white;}
+.navbar-scroll{
+  background-color: #ffffff;
+  position: fixed;
+  top:0;
+  transition-duration: 0.6s;}
+/* nav end*/
+/*about us */
+.about img{
+  width: 90%;}
+.btn{
+  background-color: #86a0b6;
+  color:#fff;
+  padding: .5em 1em;
+  border: none;
+  position: relative;
+  cursor: pointer; 
+--border-size:2px;}
+  .btn.btn-border::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    border:var(--border-size) solid #86a0b6 ;
+    transition:top,left,bottom,right, 100ms ease-in-out;}
+  .btn.btn-border:hover:after,
+  .btn.btn-border:focus:after{
+    top: calc(var(--border-size) * -2);
+    bottom: calc(var(--border-size) * -2);
+    left: calc(var(--border-size) * -2);
+    right: calc(var(--border-size) * -2);}
+/* about us end*/
+/* timeline start  */
+.story-section .story-timeline { position: relative;}
+.story-section .story-timeline .img-holder {
+  max-width: 330px;
+  padding: 10px;
+  border: 1px dashed #86a0b6;
+  position: relative;
+  z-index: 1;
+  background: #fff;
+  margin:0px 0;}
+.story-section .story-timeline .img-holder img {
+  width: 100%;}
+.story-section .story-timeline .text-holder {
+  padding-top: 45px !;
+  position: relative;}
+.story-section .story-timeline h3 {
+  font-size: 22px;
+  font-size: 1.4666666667rem;
+  font-weight: 500;
+  color: #86a0b6;
+  margin: 0 0 0.5em;
+  text-transform: uppercase;}
+.story-section .story-timeline .date {
+  font-size: 14px;
+  font-size: 0.9333333333rem;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 15px;
+  color: #86a0b6;}
+/* timeline end  */
+/*What we can do */
+.holder{
+  position: relative;
+  padding: 33px;
+  margin: 30px;}
+.holder-icon{
+  position: absolute;
+  width: 22%;
+bottom: 98%;
+ right: 39%;}
+/*What we can do end*/
+/* gallery */
+.we{
+  position: relative;
+    overflow: hidden;}
+.we-img {
+  width: 100%;
+  height: 90%;
+  object-fit:cover;}
+.we span{
+  background-color:#86a0b6;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 400;
+    left: -16px;
+    letter-spacing: 0.6px;
+    opacity: 0;
+    padding: 0 12px;
+    position: absolute;
+    top: 0;
+    transform: rotate(90deg);
+    z-index: 2;
+    transition: all 0.6s;}
+.we:hover span {
+  opacity: 1;
+  top: 42px;}
+/* gallery end */
+.from-img {
+background-image: url(./flowers-1973875_960_720.png);
+height: 100vh;
+background-repeat: no-repeat;
+background-position: center;
+background-size:auto;
+position: relative;}
+.text p{
+  font-family: lobster;
+  font-size: 30px;}
+.text{
+  position: absolute;
+  top:33%;
+  left: 37%;} 
+  .text button {display: inline-block;}
+  /*footer*/
+.footer{
+  background-image: url(./h1-background-img-7.jpg);
+background-position: center;
+background-size: cover;}
+.about-widget p {
+  margin-bottom: 20px;}
+.footer-title{
+    margin-bottom: 20px;}
+.footer-title p{
+    color: #86a0b6;
+    text-decoration: none;}
+.footer .about-widget  a {
+  color: rgb(15, 2, 2);
+  width: 42px;
+  height: 42px;
+  line-height: 46px;
+  background: #fff;
+  display: block;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 18px;}
+.footer .about-widget  a:hover {
+  background-color:#86a0b6;
+  color: #fff;}
+.link a{
+  text-decoration: none;
+  display: block;
+  margin: 5px 0;
+  color: rgb(8, 8, 8);}
+  .link a:hover{
+    color: #86a0b6;}
+  .link-icon{
+    margin-right: 10px;}
+  .contact{
+    display:block;}
+.reveal{
+  position: relative;
+  transform: translateY(20px);
+opacity: 0;
+transition: all 1s ease;}
+.reveal.active{
+  transform: translateY(0px);
+  opacity: 1;}
+
+
+  .up {
+    position: fixed;
+    right: -39px;
+    bottom: 10px;
+    background-color: #86a0b6;
+    color: white;
+    font-weight: bold;
+    font-size: 10px;
+    padding: 10px;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: .1s;
+  }
+  .up.show {
+    right: 10px;
+  }
+  .up:hover{
+    color: #000;
+  }
+  .con{
+    position: fixed;
+  right:0.7%;
+    bottom: 10%;
+    background-color: #86a0b6;
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+    padding: 10px;
+    border-radius: 50%;
+  
+  }
+  
+
+
+  
+ 

@@ -1,0 +1,40 @@
+
+  @media only screen and (min-width:1200px){
+    .nav-item > .nav-link{padding: 0px 5px !important;
+      display: block !important;}
+      
+  }
+  
+  @media (min-width: 320px) and (max-width: 767px){
+    .main-inner{background-color:white!important;}
+    .nav-item > .nav-link{
+      color: black!important}
+      .logo-taxt{color: #000 !important;
+        font-weight: 600!important;}
+        
+        
+    .we .we-img{
+      font-size: 10px; 
+   }  
+   .holder-text{
+    font-size: 10px;
+}
+.from-img{
+  display: none;
+     }
+
+.about-us{
+  display: none;
+}
+    }
+  @media (min-width: 768px) and (max-width: 991px){
+    .from-img .text{
+      top: 27%;
+      right: 44%;
+
+    } 
+
+    
+  }
+  
+  
